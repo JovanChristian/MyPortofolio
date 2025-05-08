@@ -12,6 +12,7 @@ function App() {
       {/* particles js */}
 
       {/* navbar */}
+      <navbar/>
 
       {/* main page content */}
       <Routes>
