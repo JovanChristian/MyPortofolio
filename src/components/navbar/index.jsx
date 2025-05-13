@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaReact } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { HiX } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 
@@ -22,7 +22,7 @@ const Navbar = () => {
                 <div className="navbar_container">
                     <Link to='/' className="navbar_container_logo">
                         <img
-                            src="/public/logo_portofolio_no_background"
+                            src="/logo_portofolio_no_background.png"
                             alt="JCE Logo"
                             style={{ height: "40px" }}
                         />
