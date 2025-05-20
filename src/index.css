@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root{
   --yellow-theme-background-color: #0b0b0d;
-  --yellow-theme-main-color : #5a5ce0;
+  --yellow-theme-main-color : #009FE3;
   --yellow-theme-sub-text-color : #c0c0c0 ; 
-  --yellow-theme-nav-background-color : #2e2e2e; 
+  --yellow-theme-nav-background-color: transparent;
 }
 
+/* #2e2e2e */
+/* #00AEEF */
 *{
   box-sizing: border-box;
   padding: 0;
@@ -15,6 +17,7 @@
 }
 
 html{
+  font-family: 'Poppins', sans-serif;
   font-size: 62.5%;
   height: 100;
 }
