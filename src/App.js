@@ -9,7 +9,7 @@ import Contact from './containers/contact';
 import { Routes, Route } from 'react-router-dom';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
-import particles from './util.js/particle'; // Pastikan path-nya benar
+import particles from './util.js/particle'; // Ensure the path is correct
 
 function App() {
   const handleInit = async (main) => {
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className='App'>
       {/* Particles background */}
-      <Particles id='particles'options={particles} init={handleInit} />
+      <Particles id="particles" options={particles} init={handleInit} />
 
       {/* Navigation Bar */}
       <Navbar />
