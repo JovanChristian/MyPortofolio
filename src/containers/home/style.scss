@@ -1,0 +1,36 @@
+.home {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  &__text-wrapper{
+    display: flex;
+    justify-content: center;
+
+    h1{
+        color: var(--yellow-theme-main-color);
+        margin: 0px;
+        font-weight: 500;
+        font-size: 8rem;
+        line-height: 10rem;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+  }
+}
+
+@media only screen and (maxwidth : 550px) {
+    
+}
+
+@media only screen and (minwidth : 551px) and (maxwidth : 768px) {
+    
+}
+
+@media only screen and (minwidth : 769px) and (maxwidth : 990px) {
+    
+}

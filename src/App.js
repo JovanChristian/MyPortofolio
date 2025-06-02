@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Navbar from './components/navbar/index';
 import Home from './containers/home';
 import About from './containers/about';
@@ -35,14 +35,17 @@ function App() {
       <Navbar />
 
       {/* Routing for pages */}
-      <Routes>
-        <Route index path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/resume' element={<Resume />} />
-        <Route path='/skills' element={<Skills />} />
-        <Route path='/portofolio' element={<Portofolio />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes>
+      <div className='App__main-page-content'>
+        <Routes>
+          <Route index path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/resume' element={<Resume />} />
+          <Route path='/skills' element={<Skills />} />
+          <Route path='/portofolio' element={<Portofolio />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+
+      </div>
     </div>
   );
 }
