@@ -6,21 +6,31 @@ import Resume from './containers/resume';
 import Skills from './containers/skills';
 import Portofolio from './containers/portofolio';
 import Contact from './containers/contact';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation} from 'react-router-dom';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import particles from './util.js/particle'; // Ensure the path is correct
 
 function App() {
+
+  const location = useLocation();
+  console.log(location);
+  
   const handleInit = async (main) => {
     await loadFull(main);
   };
 
+  const renderParticleJsInHomePage = location.pathname === '/';
   return (
     <div className='App'>
       {/* Particles background */}
-      <Particles id="particles" options={particles} init={handleInit} />
 
+      {renderParticleJsInHomePage && (
+        <Particles id="particles" options={particles} init={handleInit} />
+
+      )}
+
+      
       {/* Navigation Bar */}
       <Navbar />
 
